@@ -47,7 +47,7 @@ function App() {
     setmodalOpen(!modalOpen);
   };
 
-  useEffect(() => {
+  /* useEffect(() => {
     var socket = io.connect(process.env.REACT_APP_SERVER_URL);
     socket.on("update-chat", () => {
       console.log("chat-updated");
@@ -57,7 +57,7 @@ function App() {
       socket.off("disconnect");
       socket.off("pong");
     };
-  }, []);
+  }, []); */
 
   return (
     <AppContext.Provider value={{ toggleModal, modalOpen }}>
