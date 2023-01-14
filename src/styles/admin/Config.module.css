@@ -1,0 +1,181 @@
+.container {
+  padding: 50px 20px;
+}
+.btnRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.btnRow .col:nth-of-type(1) {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+.btnRow .col:nth-of-type(2) {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #056ab1;
+}
+.container th,
+td {
+  padding: 0px 5px;
+}
+.container thead {
+  background: rgba(5, 106, 177, 0.2);
+  text-align: left;
+  height: 60px;
+}
+.container tbody tr:nth-of-type(odd) {
+  background: white;
+  height: 50px;
+}
+.container tbody tr:nth-of-type(even) {
+  background: #f5f5f5;
+  height: 50px;
+}
+.container .tableRow {
+  display: flex;
+  align-items: center;
+}
+.type {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  font-size: 14px;
+  /* background-color: rgba(5, 106, 177, 0.1);
+  text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; */
+  color: rgb(255, 255, 255);
+}
+.btn {
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Agendas */
+.agendaContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 203, 144, 0.13);
+  margin: 20px 0px;
+  padding: 10px;
+}
+.agendaContainer thead {
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: #056ab1;
+}
+.agendaContainer table {
+  width: 100%;
+}
+.agendaContainer table tbody tr {
+  width: 100%;
+}
+.agendaContainer table tbody td:nth-of-type(1) {
+  width: 40px;
+  height: 100%;
+  color: #056ab1;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.agendaContainer table tbody td:nth-of-type(1) p:nth-of-type(1) {
+  position: absolute;
+  top: 0px;
+}
+.agendaContainer table tbody td:nth-of-type(1) p:nth-of-type(2) {
+  position: absolute;
+  bottom: 0px;
+}
+.agendaContainer .cell {
+  background: rgba(6, 203, 144, 0.13);
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  font-weight: 500;
+  color: white;
+}
+.agendaContainer .cell .icon {
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: 10;
+}
+.agendaContainer .cell:hover .icon {
+  opacity: 1;
+  pointer-events: all;
+}
+.agendaContainer table th {
+  width: calc(100vw / 8);
+}
+.agendaContainer table th .day {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.agendaContainer table th:nth-of-type(1) {
+  width: 50px;
+}
+.agendaContainer .addRow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.agendaContainer .icon {
+  background-color: #fafafa;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.agendaContainer .icon:hover {
+  transform: scale(1.1);
+}
+.agendaContainer .col {
+  width: 99%;
+  margin: 0.5% 0.5%;
+  height: 99%;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.agendaContainer .col .overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all 0.3s;
+}
+.agendaContainer .col:hover .overlay {
+  opacity: 0.8;
+  pointer-events: all;
+}

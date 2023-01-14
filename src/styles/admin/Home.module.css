@@ -1,0 +1,110 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.card {
+  cursor: pointer;
+  box-shadow: 0px 4px 22px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+.card:hover {
+  margin-top: -15px;
+}
+.color1 {
+  background: rgba(6, 203, 144, 0.13);
+}
+.color2 {
+  background: rgba(203, 6, 100, 0.13);
+}
+.color3 {
+  background: rgba(175, 203, 6, 0.13);
+}
+.color4 {
+  background: rgba(220, 201, 99, 0.13);
+}
+.color5 {
+  background: rgba(72, 219, 219, 0.37);
+}
+.card p {
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #056ab1;
+  margin: 5px;
+}
+.card img {
+  width: 30px;
+  height: 30px;
+}
+.headerRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: -270px;
+}
+.col70 {
+  width: 70%;
+}
+.col30 {
+  width: 30%;
+}
+.rdvContainer {
+  margin: 20px 0px;
+}
+.rdvContainer h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #056ab1;
+}
+.tableContainer {
+  width: 100%;
+  height: calc(100vh - 457px);
+  overflow: auto;
+}
+.inputRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px;
+}
+.autoComplete {
+  background: #f5f5f5;
+}
+.datetime {
+  background-color: #f5f5f5;
+  width: 22%;
+  height: 55px;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 5px;
+}
+.datetime:hover {
+  border: 1px solid #000;
+}
+.datetime:focus {
+  color: #056ab1;
+}
+.chart {
+  margin-top: calc(100% / 6);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}

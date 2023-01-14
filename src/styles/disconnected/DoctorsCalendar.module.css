@@ -1,0 +1,80 @@
+.container {
+  padding: 120px 80px;
+  width: 100%;
+}
+.card {
+  padding: 50px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.card .profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: solid 1px var(--main-color);
+  overflow: hidden;
+}
+.card .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container h1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 126.52%;
+  letter-spacing: 0.105em;
+  color: #056ab1;
+  margin-bottom: 30px;
+}
+.card p {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.105em;
+  color: #056ab1;
+}
+.globalRow {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.col40 {
+  width: 40%;
+}
+.col60 {
+  width: 60%;
+}
+.col30 {
+  width: 30%;
+}
+.col70 {
+  width: 80%;
+  height: 75vh;
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 120px 20px;
+    width: 100%;
+  }
+  .globalRow {
+    width: 100%;
+    flex-direction: column;
+  }
+  .col30 {
+    width: 100%;
+  }
+  .col70 {
+    width: 100%;
+  }
+}

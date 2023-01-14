@@ -1,0 +1,30 @@
+.container {
+  padding: 120px 0px;
+  height: calc(100vh - 120px);
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container h1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #056ab1;
+  width: 90%;
+}
+.container .controls {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tableContainer {
+  width: 100%;
+  height: calc(100vh - 320px);
+  overflow: auto;
+}

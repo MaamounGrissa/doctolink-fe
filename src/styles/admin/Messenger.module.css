@@ -1,0 +1,221 @@
+.container {
+  width: 100%;
+  display: flex;
+  height: calc(100vh - 90px);
+}
+.patientPage {
+  padding-top: 90px;
+  height: 100vh;
+}
+.col30 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: #b8d9f093;
+  overflow-y: auto;
+}
+.room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  width: 90%;
+  padding: 0px 10px;
+  margin: 10px 5%;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+.room:hover {
+  border: 1px solid #056ab1;
+}
+.room .col25 {
+  width: 20%;
+  overflow: hidden;
+  z-index: 100;
+}
+.room .col75 {
+  padding: 0px 5px;
+  width: 80%;
+}
+.room .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.room h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #056ab1;
+}
+.room p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: lowercase;
+  color: #056ab1;
+}
+.unread {
+  background: #e6e6e6;
+  box-shadow: 0px 0px 5px rgb(146, 146, 146);
+}
+.read {
+  background: #f5f5f5;
+}
+.room img {
+  width: 49px;
+  height: 49px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #056ab1;
+}
+.col70 {
+  width: 70%;
+  display: flex;
+}
+.chatImg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatImg img {
+  width: 50%;
+}
+.chat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 60px;
+}
+.chatHead {
+  z-index: 100;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  height: 70px;
+  border-bottom: 1px solid #056ab1;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffffdc;
+  backdrop-filter: blur(5px);
+}
+.chatHead .profile {
+  padding: 10px;
+}
+.chatHead .profile img {
+  width: 49px;
+  height: 49px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #056ab1;
+}
+.chatHead p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #056ab1;
+}
+.chatFooter {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+}
+.chatFooter textarea {
+  background-color: #ffffffdc;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #056ab1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: rgb(31, 31, 31);
+  font-family: "Inter";
+  resize: none;
+}
+.chatFooter textarea::placeholder {
+  color: rgba(38, 38, 38, 0.19);
+}
+.chatBody {
+  overflow-y: auto;
+  position: absolute;
+  top: 60px;
+  height: calc(100vh - 210px);
+  width: 100%;
+}
+.messageRow {
+  width: 100%;
+  padding: 20px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+.message {
+  width: 50%;
+  border-radius: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 20px;
+  text-transform: lowercase;
+}
+.sender {
+  color: #ffffff;
+  background: #056ab1;
+}
+.receiver {
+  color: #056ab1;
+  background: #f5f5f5;
+}
+.icon {
+  width: 49px;
+  height: 49px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #056ab1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.mobileVisible {
+  display: none;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .container {
+    height: calc(100vh - 50px);
+    position: relative;
+  }
+  .col30 {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 100px);
+    backdrop-filter: blur(5px);
+  }
+  .col70 {
+    width: 100%;
+  }
+  .chatBody {
+    background-color: white;
+    height: calc(100vh - 260px);
+  }
+  .mobileVisible {
+    display: block;
+    pointer-events: all;
+  }
+}

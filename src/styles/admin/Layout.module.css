@@ -1,0 +1,22 @@
+.container {
+  padding: 120px 20px;
+  width: 100%;
+  display: flex;
+}
+.col15 {
+  width: 15%;
+  transition: all 0.3s;
+}
+.col85 {
+  width: 85%;
+  transition: all 0.3s;
+}
+.col0 {
+  width: 0%;
+  transition: all 0.3s;
+}
+.col100 {
+  width: 100%;
+  transition: all 0.3s;
+  margin-left: 5px;
+}
