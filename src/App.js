@@ -20,6 +20,8 @@ function App() {
   const { userInfo } = useSelector((state) => state.auth);
   const isMobile = useMediaQuery("(max-width:900px)");
 
+  console.log(userInfo);
+
   axios.defaults.withCredentials = true;
   axios.defaults.baseURL = getUrl();
   axios.defaults.headers.common["Authorization"] = userInfo?.token;
