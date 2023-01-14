@@ -31,6 +31,8 @@ function Layout(props) {
 
   const navigate = useNavigate();
 
+  console.log(userInfo)
+
   const fetchDoctors = async () => {
     const { data } = await axios.post(
       `/establishments/getbyest/${userInfo.establishment}`
@@ -118,7 +120,7 @@ function Layout(props) {
   }, [userInfo]);
 
   useEffect(() => {
-    if (userInfo) {
+    if (userInfo && userInfo.establishment) {
       if (userInfo?.role === "PATIENT") {
         var socket = io.connect(process.env.REACT_APP_SERVER_URL);
         // JOIN-ROOM
