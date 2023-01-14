@@ -4,7 +4,7 @@ const compress = new Compress();
 
 export function getUrl() {
   return process.env.NODE_ENV === "production"
-    ? "https://doctolink-v2.herokuapp.com"
+    ? process.env.REACT_APP_SERVER_URL
     : "http://localhost:5000";
 }
 
